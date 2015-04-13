@@ -25,8 +25,6 @@
   with_items:
     - src: '/tmp/mmonit-{{ mmonit_version }}/'
       dest: '{{ mmonit_home }}'
-  # cannot use variable for a sudo_user parameter
-  sudo_user: mmonit
 
 - name: link files to convenient places
   file:
