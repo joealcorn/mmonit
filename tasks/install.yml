@@ -28,7 +28,7 @@
   # cannot use variable for a sudo_user parameter
   sudo_user: mmonit
 
-- name: link files to conviniant places
+- name: link files to convenient places
   file:
     src: '{{ item.src }}'
     dest: '{{ item.dest }}'
