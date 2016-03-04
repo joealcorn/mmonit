@@ -83,7 +83,7 @@
            DNS lookups will have an adverse impact on performance if you use
            an Access Logger.
        -->
-       <Connector address="*" port="8080" processors="10" />
+       <Connector address="{{ mmonit_host }}" port="8080" processors="10" />
 
        <!-- Define a SSL/TLS HTTP/1.1 Connector on port 8443 -->
        <!--
