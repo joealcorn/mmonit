@@ -1,0 +1,20 @@
+galaxy_info:
+  author: Sébastien Gross
+  description: "This role installs and configures M/Monit monitoring plateform."
+  license: WTFPL
+  min_ansible_version: 1.9
+  platforms:
+    - name: Ubuntu
+      versions:
+        - trusty
+        - utopic
+        - vivid
+    - name: Debian
+      versions:
+        - jessie
+        - squeeze
+        - wheezy
+  categories:
+   - system
+   - monitoring
+dependencies: []
