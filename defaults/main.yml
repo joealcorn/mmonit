@@ -18,8 +18,10 @@ mmonit_license_key: >-
   UTYEVKLWJX-4QLIFZNY7O-A4NNTOI4P5-WHUV5AFI4A-PS7PVX3PC5
   MRVYO
 
+# address to listen on
+mmonit_host: '*'
+
 # MMonit user to create
 mmonit_user: mmonit
 mmonit_user_comment: M/Monit daemon
 mmonit_home: /var/lib/mmonit
-  
