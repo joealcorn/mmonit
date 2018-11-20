@@ -1,8 +1,0 @@
----
-
-## Name of the downloaded mmonit file
-mmonit_archive_file: mmonit-{{ mmonit_version }}-linux-x86.tar.gz
-
-
-## URL from where to download the mmonit binaries
-mmonit_download_url: https://mmonit.com/dist/{{ mmonit_archive_file }}
