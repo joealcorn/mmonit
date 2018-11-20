@@ -83,7 +83,7 @@
            DNS lookups will have an adverse impact on performance if you use
            an Access Logger.
        -->
-       <Connector address="{{ mmonit_host }}" port="8080" processors="10" />
+       <Connector address="*" port="{{ mmonit_port }}" {% if mmonit_cert %}secure="true" scheme="https"{% endif %} processors="10" />
 
        <!-- Define a SSL/TLS HTTP/1.1 Connector on port 8443 -->
        <!--
@@ -131,7 +131,7 @@
             * ErrorLogger - Configure an error logger that is used by
               the Server to dump error and warning messages.
        -->
-       <Engine name="mmonit" defaultHost="localhost" fileCache="10MB">
+       <Engine name="mmonit" defaultHost="{{ mmonit_host }}" fileCache="10MB">
 
            <!--
                The Realm element specify the database to be used by M/Monit
@@ -276,7 +276,7 @@
                Define the default virtual host which name must match the
                Engine defaultHost attribute
            -->
-           <Host name="localhost" appBase=".">
+           <Host name="{{ mmonit_host }}" appBase="." address="{{ mmonit_ip }}" {% if mmonit_cert %}certificate="{{ mmonit_cert }}"{% endif %} >
 
                <!--
                    Access logger that logs all requests for this virtual host.

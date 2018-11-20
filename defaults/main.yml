@@ -20,6 +20,9 @@ mmonit_license_key: >-
 
 # address to listen on
 mmonit_host: '*'
+mmonit_ip: 127.0.0.1
+mmonit_port: 8080
+mmonit_cert: false
 
 # MMonit user to create
 mmonit_user: mmonit
